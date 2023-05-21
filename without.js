@@ -20,7 +20,6 @@ const assertArraysEqual = function(array1, array2){
 };
 
 const without = function(source, itemsToRemove) {
-  let j = 0;
   for(let i = 0; i < source.length; i++) {
     for(let j = 0; j < itemsToRemove.length; j++) {
       if(source[i] == itemsToRemove[j]) {
@@ -32,6 +31,6 @@ const without = function(source, itemsToRemove) {
     return source;
   };
 
-const words = ["hello", "world", "lighthouse"];
+const words = ["hello", "world", "hello", "lighthouse"];
 console.log(without(words, ["lighthouse","hello"])); 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
