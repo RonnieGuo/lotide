@@ -31,6 +31,6 @@ const without = function(source, itemsToRemove) {
     return source;
   };
 
-const words = ["hello", "world", "hello", "lighthouse"];
+const words = ["hello", "hello", "world", "hello", "lighthouse"];
 console.log(without(words, ["lighthouse","hello"])); 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
