@@ -20,7 +20,7 @@ const countLetters = function (input) {
       output[letter] = 1;
     }
   }
-  console.log(assertEqual(output["h"], 4));
+  console.log(assertEqual(output["e"], 3));
   return output;
 }
 
