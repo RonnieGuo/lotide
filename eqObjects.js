@@ -1,3 +1,19 @@
+const eqArrays = function(arr1, arr2){
+  
+  if (arr1.length === arr2.length) {
+
+    for (const item of arr1) {
+      if (!arr2.includes(item)) {
+        return false;
+      }
+     
+    }  
+    return true;
+  }
+  return false;
+};
+
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
@@ -10,7 +26,17 @@ const assertEqual = function(actual, expected) {
 const eqObjects = function(object1, object2) {
   const arr1 = Object.keys(object1);
   const arr2 = Object.keys(object2);
-
+  if (eqArrays(arr1, arr2)){
+    for (const item of arr1) {
+     if (arr1[item] !== arr2[item]) {
+       return false;
+     }
+   }
+   return true;
+  }
+  else {return false;}
+};
+/*
   if (arr1.length === arr2.length) {
 
     for (const item of arr1) {
@@ -28,6 +54,7 @@ const eqObjects = function(object1, object2) {
   return false;
     
 };
+*/
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject= { size: "medium", color: "red" };
