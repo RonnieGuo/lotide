@@ -22,5 +22,11 @@ const eqObjects = function(object1, object2) {
 
 
 const assertObjectsEqual = function(actual, expected) {
-  // Implement me!
+  const inspect = require('util').inspect; // <= add this line
+  if (eqObjects(actual, expected)){
+    console.log("The objects are equal.")
+   }
+   else{
+     console.log("The objects are not equal.")
+   }
 };
