@@ -1,3 +1,4 @@
+// Create map function that takes in an array to map and a callback function
 const words = ["ground", "control", "to", "major", "tom"];
 const map = function(array, callback) {
   const results = [];
@@ -9,6 +10,7 @@ const map = function(array, callback) {
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
+//test code with assertArraysEqual function
 const eqArrays = function(arr1, arr2){
   if (arr1.length !== arr2.length) {
     return false;
