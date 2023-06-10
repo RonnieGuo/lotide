@@ -24,3 +24,5 @@ assertEqual(1, 1);
 assertEqual(1, 2);
 assertEqual("Apple", "Apple");
 assertEqual("Apple", "Banana");
+
+module.exports = assertEqual;
