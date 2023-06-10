@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ronnieguo/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/RonnieGuo/lotide.git"
   },
-  "author": "",
+  "author": "ronnieguo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RonnieGuo/lotide/issues"
